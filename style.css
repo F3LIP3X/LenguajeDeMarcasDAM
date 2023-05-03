@@ -2,9 +2,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 table td{
     border: 1px solid black;
     border-collapse: collapse;
+}
+
+td {
+    border: 1px solid black;
+    width: 200px;
 }
