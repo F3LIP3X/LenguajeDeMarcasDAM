@@ -1,18 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>TablaNumeros</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
-<body>
-    <table>
-        <tr>
-            <td>
 
-            </td>
-        </tr>
-        <script src="ejer.js"></script>
-    </table>
-    
+<body>
+    <div class="body">
+        <div>
+            <h1 class="title">DISTRIBUCIÓN DE NÚMEROS</h1>
+        </div>
+        <table>
+            <tr id="arrows">
+                <td>Impares</td>
+                <td>Pares</td>
+            </tr>
+            <script src="main.js"></script>
+        </table>
+        <div class="buttons">
+            <button onclick="Primo()">Primos</button>
+            <button onclick="Compuesto()">Compustos</button>
+            <button onclick="MultiploDe5()">Multiplos de 5</button>
+            <button onclick="Perfecto()">Perfectos</button>
+            <button onclick="reset()">Original</button>
+        </div>
+    </div>
 </body>
 </html>
