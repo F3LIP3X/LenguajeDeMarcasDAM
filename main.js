@@ -7,8 +7,8 @@ for (let x = 1; x < 50; x = x + 2) {
     )
 }
 
-function reset(){
-    for (let y = 1; y <=50; y++) {
+function reset() {
+    for (let y = 1; y <= 50; y++) {
         document.getElementById(String(y)).style.backgroundColor = "rgb(162, 179, 193)"
     }
 }
@@ -67,42 +67,38 @@ function esPerfecto(numero) {
 
 
 
-function Primo(){
+function Primo() {
     reset();
     for (let i = 1; i <= 50; i++) {
-        if(esPrimo(i)){
-            document.getElementById(String(i)).style.backgroundColor = "purple"
+        if (esPrimo(i)) {
+            document.getElementById(String(i)).style.backgroundColor = "rgb(247, 118, 247)"
+        }
+    }
+}
+function Compuesto() {
+    reset();
+    for (let i = 1; i <= 50; i++) {
+        if (esCompuesto(i)) {
+            document.getElementById(String(i)).style.backgroundColor = "rgb(247, 118, 247)"
+        }
 
-        }
-        
     }
 }
-function Compuesto(){
+function MultiploDe5() {
     reset();
     for (let i = 1; i <= 50; i++) {
-        if(esCompuesto(i)){
-            document.getElementById(String(i)).style.backgroundColor = "purple"
+        if (esMultiploDe5(i)) {
+            document.getElementById(String(i)).style.backgroundColor = "rgb(247, 118, 247)"
         }
-        
-    }
-}
-function MultiploDe5(){
-    reset();
-    for (let i = 1; i <= 50; i++) {
-        if(esMultiploDe5(i)){
-            document.getElementById(String(i)).style.backgroundColor = "purple"
-        }
-        
-    }
-}
-function Perfecto(){
-    reset();
-    for (let i = 1; i <= 50; i++) {
-        if(esPerfecto(i)){
-            document.getElementById(String(i)).style.backgroundColor = "purple"
-        }
-        
-    }
-}
 
+    }
+}
+function Perfecto() {
+    reset();
+    for (let i = 1; i <= 50; i++) {
+        if (esPerfecto(i)) {
+            document.getElementById(String(i)).style.backgroundColor = "rgb(247, 118, 247)"
+        }
 
+    }
+}
