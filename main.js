@@ -1,14 +1,29 @@
-for (let x = 1; x < 50; x = x + 2) {
+/*
+@author Felipe Toledano Escudero
+*/
+
+function controladorNumerosPares(numero) {
+    if (numero % 2 === 0) {
+        return numero;
+    } else {
+        return numero + 1;
+    }
+}
+
+var numbers = parseInt(prompt("INTRODUCE UNA CIFRA"))
+numberCheck = controladorNumerosPares(numbers);
+
+for (let nums = 1; nums < numberCheck; nums = nums + 2) {
     document.write(
         "<tr id='numbers'>",
-        "<td id='", x, "'>", x, "</td>",
-        "<td id='", x + 1, "'>", x + 1, "</td>",
+        "<td id='", nums, "'>", nums, "</td>",
+        "<td id='", nums + 1, "'>", nums + 1, "</td>",
         "</tr>",
     )
 }
 
 function reset() {
-    for (let y = 1; y <= 50; y++) {
+    for (let y = 1; y <= numberCheck; y++) {
         document.getElementById(String(y)).style.backgroundColor = "rgb(162, 179, 193)"
     }
 }
@@ -69,15 +84,17 @@ function esPerfecto(numero) {
 
 function Primo() {
     reset();
-    for (let i = 1; i <= 50; i++) {
+    for (let i = 1; i <= numberCheck; i++) {
         if (esPrimo(i)) {
             document.getElementById(String(i)).style.backgroundColor = "rgb(247, 118, 247)"
+
         }
+
     }
 }
 function Compuesto() {
     reset();
-    for (let i = 1; i <= 50; i++) {
+    for (let i = 1; i <= numberCheck; i++) {
         if (esCompuesto(i)) {
             document.getElementById(String(i)).style.backgroundColor = "rgb(247, 118, 247)"
         }
@@ -86,7 +103,7 @@ function Compuesto() {
 }
 function MultiploDe5() {
     reset();
-    for (let i = 1; i <= 50; i++) {
+    for (let i = 1; i <= numberCheck; i++) {
         if (esMultiploDe5(i)) {
             document.getElementById(String(i)).style.backgroundColor = "rgb(247, 118, 247)"
         }
@@ -95,10 +112,12 @@ function MultiploDe5() {
 }
 function Perfecto() {
     reset();
-    for (let i = 1; i <= 50; i++) {
+    for (let i = 1; i <= numberCheck; i++) {
         if (esPerfecto(i)) {
             document.getElementById(String(i)).style.backgroundColor = "rgb(247, 118, 247)"
         }
 
     }
 }
+
+
