@@ -25,7 +25,7 @@ function reset() {
     for (let y = 1; y <= numberCheck; y++) {
         var estilo = document.getElementById(String(y))
         estilo.style.backgroundColor = "rgb(162, 179, 193)"
-        estilo.style.color = "black"
+        estilo.style.color = "white"
         estilo.style.fontWeight = "normal"
         estilo.style.transition = "0"
         estilo.style.transform = "scale(1)";
@@ -115,7 +115,7 @@ function Compuesto() {
     for (let i = 1; i <= numberCheck; i++) {
         if (esCompuesto(i)) {
             var estilo = document.getElementById(String(i))
-            estilo.style.backgroundColor = "rgb(80, 110, 100)"
+            estilo.style.backgroundColor = "rgb(200,90,133)"
             estilo.style.color = "White";
             estilo.style.fontWeight = "bold";
             estilo.style.transition = "1s";
@@ -132,7 +132,7 @@ function MultiploDe5() {
     for (let i = 1; i <= numberCheck; i++) {
         if (esMultiploDe5(i)) {
             var estilo = document.getElementById(String(i))
-            estilo.style.backgroundColor = "rgb(186, 247, 72)"
+            estilo.style.backgroundColor = "rgb(200,80,70)"
             estilo.style.color = "black";
             estilo.style.fontWeight = "bold";
             estilo.style.animation = "examble"
