@@ -6,7 +6,7 @@
 }
 
 body {
-    background-image: url(./estrellas.png);
+    background-image: url(../Multimedia/estrellas.png);
     background-size: cover;
 }
 
@@ -71,7 +71,7 @@ button:focus {
     background-color: rgb(131,159,219);
 }
 button:hover {
-    background-color: rgb(204, 110, 255);
+    background-color: rgb(131,159,219);
 }
 
 .panel {
