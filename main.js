@@ -12,7 +12,7 @@ function controladorNumerosPares(numero) {
 
 var numbers = parseInt(prompt("INTRODUCE UNA CIFRA"))
 numberCheck = controladorNumerosPares(numbers);
-
+document.getElementById("1-x").innerHTML = "<pre class='panel'>Del Número 1 al " + numberCheck + " está es la organización de Impares y Pares." + "</pre>";
 for (let nums = 1; nums < numberCheck; nums = nums + 2) {
     document.write(
         "<tr id='numbers'>",
@@ -21,7 +21,6 @@ for (let nums = 1; nums < numberCheck; nums = nums + 2) {
         "</tr>",
     )
 }
-
 function reset() {
     for (let y = 1; y <= numberCheck; y++) {
         var estilo = document.getElementById(String(y))
@@ -36,6 +35,7 @@ function reset() {
         estilo.style.transform = "rotate(0deg) scale(1)";
 
     }
+    document.getElementById("1-x").innerHTML = "<pre class='panel'>Del Número 1 al " + numberCheck + " está es la organización de Impares y Pares." + "</pre>";
     document.getElementById("panel").innerHTML = "<pre class='panel'>Original</pre>";
 }
 function esPrimo(numero) {
@@ -108,6 +108,7 @@ function Primo() {
 
     }
     document.getElementById("panel").innerHTML = "<pre class='panel'>Mostrando los números Primos</pre>";
+    document.getElementById("1-x").innerHTML = "<pre class='panel'>Del Número 1 al " + numberCheck + " está es la organización de numeros primos." + "</pre>";
 }
 function Compuesto() {
     reset();
@@ -123,6 +124,7 @@ function Compuesto() {
         }
 
     }
+    document.getElementById("1-x").innerHTML = "<pre class='panel'>Del Número 1 al " + numberCheck + " estos son los números Compuestos." + "</pre>";
     document.getElementById("panel").innerHTML = "<pre class='panel'>Mostrando los números Compuestos</pre>";
 }
 function MultiploDe5() {
@@ -138,7 +140,8 @@ function MultiploDe5() {
         }
 
     }
-    document.getElementById("panel").innerHTML = "<pre class='panel'>Mostrando los Multipos de 5</pre>";
+    document.getElementById("1-x").innerHTML = "<pre class='panel'>Del Número 1 al " + numberCheck + " estos son los números Multiplos de 5" + "</pre>";
+    document.getElementById("panel").innerHTML = "<pre class='panel'>Mostrando los Múltipos de 5</pre>";
 }
 function Perfecto() {
     reset();
@@ -150,10 +153,11 @@ function Perfecto() {
             estilo.style.fontWeight = "bold";
             estilo.style.animation = "examble"
             estilo.style.transition = "2s";
-            estilo.style.transform = "rotate(2deg) scale(0.8)";
+            estilo.style.transform = "rotate(-360deg) scale(0.9)";
         }
 
     }
+    document.getElementById("1-x").innerHTML = "<pre class='panel'>Del Número 1 al " + numberCheck + " estos son los números primos." + "</pre>";
     document.getElementById("panel").innerHTML = "<pre class='panel'>Mostrando los números Perfectos</pre>";
 }
 
