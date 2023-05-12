@@ -98,7 +98,7 @@ function Primo() {
     for (let i = 1; i <= numberCheck; i++) {
         if (esPrimo(i)) {
             var estilo = document.getElementById(String(i))
-            estilo.style.backgroundColor = "rgb(80, 110, 200)"
+            estilo.style.backgroundColor = "rgb(80, 110, 200)";
             estilo.style.color = "White";
             estilo.style.fontWeight = "bold";
             estilo.style.transition = "1s";
@@ -114,7 +114,7 @@ function Compuesto() {
     for (let i = 1; i <= numberCheck; i++) {
         if (esCompuesto(i)) {
             var estilo = document.getElementById(String(i))
-            estilo.style.backgroundColor = "rgb(80, 110, 200)"
+            estilo.style.backgroundColor = "rgb(80, 110, 100)"
             estilo.style.color = "White";
             estilo.style.fontWeight = "bold";
             estilo.style.transition = "1s";
@@ -144,7 +144,6 @@ function Perfecto() {
     reset();
     for (let i = 1; i <= numberCheck; i++) {
         if (esPerfecto(i)) {
-            document.getElementById(String(i)).style.backgroundColor = "rgb(247, 118, 247)"
             var estilo = document.getElementById(String(i))
             estilo.style.backgroundColor = "rgb(97, 8, 8)"
             estilo.style.color = "white";
