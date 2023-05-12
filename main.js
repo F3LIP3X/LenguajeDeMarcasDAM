@@ -12,7 +12,7 @@ function controladorNumerosPares(numero) {
 
 var numbers = parseInt(prompt("INTRODUCE UNA CIFRA"))
 numberCheck = controladorNumerosPares(numbers);
-document.getElementById("1-x").innerHTML = "<pre class='panel'>Del Número 1 al " + numberCheck + " está es la organización de Impares y Pares." + "</pre>";
+document.getElementById("1-x").innerHTML = "<pre class='panel'>Del Número 1 al " + numberCheck + " esta es la organización de Impares y Pares." + "</pre>";
 for (let nums = 1; nums < numberCheck; nums = nums + 2) {
     document.write(
         "<tr id='numbers'>",
@@ -35,7 +35,7 @@ function reset() {
         estilo.style.transform = "rotate(0deg) scale(1)";
 
     }
-    document.getElementById("1-x").innerHTML = "<pre class='panel'>Del Número 1 al " + numberCheck + " está es la organización de Impares y Pares." + "</pre>";
+    document.getElementById("1-x").innerHTML = "<pre class='panel'>Del Número 1 al " + numberCheck + " esta es la organización de Impares y Pares.</pre>";
     document.getElementById("panel").innerHTML = "<pre class='panel'>Original</pre>";
 }
 function esPrimo(numero) {
@@ -108,7 +108,7 @@ function Primo() {
 
     }
     document.getElementById("panel").innerHTML = "<pre class='panel'>Mostrando los números Primos</pre>";
-    document.getElementById("1-x").innerHTML = "<pre class='panel'>Del Número 1 al " + numberCheck + " está es la organización de numeros primos." + "</pre>";
+    document.getElementById("1-x").innerHTML = "<pre class='panel'>Del Número 1 al " + numberCheck + " esta es la organización de números primos." + "</pre>";
 }
 function Compuesto() {
     reset();
@@ -140,7 +140,7 @@ function MultiploDe5() {
         }
 
     }
-    document.getElementById("1-x").innerHTML = "<pre class='panel'>Del Número 1 al " + numberCheck + " estos son los números Multiplos de 5" + "</pre>";
+    document.getElementById("1-x").innerHTML = "<pre class='panel'>Del Número 1 al " + numberCheck + " estos son los números Múltiplos de 5" + "</pre>";
     document.getElementById("panel").innerHTML = "<pre class='panel'>Mostrando los Múltipos de 5</pre>";
 }
 function Perfecto() {
@@ -157,7 +157,7 @@ function Perfecto() {
         }
 
     }
-    document.getElementById("1-x").innerHTML = "<pre class='panel'>Del Número 1 al " + numberCheck + " estos son los números primos." + "</pre>";
+    document.getElementById("1-x").innerHTML = "<pre class='panel'>Del Número 1 al " + numberCheck + " estos son los números perfectos." + "</pre>";
     document.getElementById("panel").innerHTML = "<pre class='panel'>Mostrando los números Perfectos</pre>";
 }
 
