@@ -76,3 +76,14 @@ button:focus {
     border-radius: 10px;
     border: 2px solid rgb(87, 86, 86);
 }
+
+@media screen and (min-width: 600px) {
+  .body {
+    width: 90%
+  }
+
+    button {
+        width: 170px;
+        height: 50px;
+    }
+}
